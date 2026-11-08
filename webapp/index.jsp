@@ -7,15 +7,21 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Exemplo JSP</title>
+    <title>Simulador de Frete JSP</title>
 </head>
 <body>
 <form action="ServletFrete" method="post">
-    <label>Nome:</label>
-    <input type="text" name="nome" required>
-    <label>E-mail:</label>
-    <input type="email" name="email" required>
+    <label>Peso da Encomenda(em kg):</label>
+    <input type="text" name="peso" required>
+    <label>Distância da Entrega(em km):</label>
+    <input type="text" name="distancia" required>
+    <label>Modalidade:
+        <input type="radio" name="modalidade" value="normal" required>Normal
+        <input type="radio" name="modalidade" value="expressa" required>Expressa
+    </label>
     <button type="submit">Enviar</button>
 </form>
+<br>
+<h3>Feito por: Weslley Gatti</h3>
 </body>
 </html>
